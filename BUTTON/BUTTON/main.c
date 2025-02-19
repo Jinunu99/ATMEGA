@@ -7,7 +7,7 @@
 #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
-
+// 변경 확인 차 쓴 주석
 // DDRG 4번에 연결된 스위치로 모든 LED 켜기
 /*
 int main(void)
@@ -43,7 +43,7 @@ int main(void)
 	while(1)
 	{
 		// 풀업저항이기 때문에 스위치를 안누르면 PING - 11100
-		if(!(PING & (1 << 4))) // 4번 스위치 누르면 (PING - 01100)
+		if(!(PING & (1 << 4))) // 4번 스위치 누르면 (PING - 01100) & 10000
 			PORTD = 0x01;
 			
 		if(!(PING & (1 << 3))) // 3번 스위치 누르면 (PING - 10100)
