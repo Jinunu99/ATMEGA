@@ -8,10 +8,10 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-#define FND_DATA_DDR     DDRB  // B번 포트에 0,1,2,3,4,5,6
-#define FND_SELECT_DDR   DDRC  // C번 포트에 0, 1, 2, 3 꽂음
-#define FND_DATA_PORT    PORTB
-#define FND_SELECT_PORT  PORTC
+#define FND_DATA_DDR     DDRC  // B번 포트에 0,1,2,3,4,5,6
+#define FND_SELECT_DDR   DDRB  // C번 포트에 0, 1, 2, 3 꽂음
+#define FND_DATA_PORT    PORTC
+#define FND_SELECT_PORT  PORTB
 
 void fndDisplay(uint16_t data)
 {

@@ -25,14 +25,14 @@ int main(void)
 		buttonData = PING;
 		if((buttonData & (1 << 4)) == 0) // 4번 버튼을 누르면 (여기서 0은 버튼을 눌렀다는 의미)
 		{
-			PORTD = ledData; //현재 0x01
 			ledData = (ledData >> 7) | (ledData << 1);
+			PORTD = ledData;
 			_delay_ms(300);
 		}
 		if((buttonData & (1 << 3)) == 0) // 3번 버튼을 누르면
 		{
-			PORTD = ledData;
 			ledData = (ledData >> 1) | (ledData << 7);
+			PORTD = ledData;
 			_delay_ms(300);
 		}
 		if(flag == 0)

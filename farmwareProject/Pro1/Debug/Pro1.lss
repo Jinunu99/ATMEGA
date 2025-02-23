@@ -1,0 +1,572 @@
+
+Pro1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000016  00800100  00000326  000003ba  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000326  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800116  00800116  000003d0  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000003d0  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000400  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000030  00000000  00000000  00000440  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000096c  00000000  00000000  00000470  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000875  00000000  00000000  00000ddc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000003fc  00000000  00000000  00001651  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000064  00000000  00000000  00001a50  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000045e  00000000  00000000  00001ab4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000123  00000000  00000000  00001f12  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000020  00000000  00000000  00002035  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	43 c0       	rjmp	.+134    	; 0xc8 <__vector_16>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e6 e2       	ldi	r30, 0x26	; 38
+  a0:	f3 e0       	ldi	r31, 0x03	; 3
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a6 31       	cpi	r26, 0x16	; 22
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a6 e1       	ldi	r26, 0x16	; 22
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a9 31       	cpi	r26, 0x19	; 25
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	b0 d0       	rcall	.+352    	; 0x224 <main>
+  c4:	2e c1       	rjmp	.+604    	; 0x322 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <__vector_16>:
+uint8_t count = 10;
+volatile uint8_t ms_count = 0;
+uint8_t flag = 0;     // fndDisplay를 출력할지 결정하는 flag
+
+ISR(TIMER0_OVF_vect) // 타이머/카운터 오버플로우 인터럽트 벡터
+{
+  c8:	1f 92       	push	r1
+  ca:	0f 92       	push	r0
+  cc:	0f b6       	in	r0, 0x3f	; 63
+  ce:	0f 92       	push	r0
+  d0:	11 24       	eor	r1, r1
+  d2:	8f 93       	push	r24
+	// 주기 16us를 256번 카운팅되면 => 4ms마다 인터럽트 발생됨
+	// 4ms를 200번 카운트하면 1초가 됨
+	ms_count++; // 4ms마다 카운트 됨
+  d4:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <ms_count>
+  d8:	8f 5f       	subi	r24, 0xFF	; 255
+  da:	80 93 18 01 	sts	0x0118, r24	; 0x800118 <ms_count>
+	if(ms_count == 250) // ms_count가 250이 되면 실제로 1초가 되었다는 뜻
+  de:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <ms_count>
+  e2:	8a 3f       	cpi	r24, 0xFA	; 250
+  e4:	39 f4       	brne	.+14     	; 0xf4 <__vector_16+0x2c>
+	{
+		ms_count = 0;
+  e6:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <ms_count>
+		count--;
+  ea:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  ee:	81 50       	subi	r24, 0x01	; 1
+  f0:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	}
+}
+  f4:	8f 91       	pop	r24
+  f6:	0f 90       	pop	r0
+  f8:	0f be       	out	0x3f, r0	; 63
+  fa:	0f 90       	pop	r0
+  fc:	1f 90       	pop	r1
+  fe:	18 95       	reti
+
+00000100 <fndDisplay>:
+
+void fndDisplay(uint8_t data)
+{
+ 100:	cf 93       	push	r28
+ 102:	df 93       	push	r29
+ 104:	cd b7       	in	r28, 0x3d	; 61
+ 106:	de b7       	in	r29, 0x3e	; 62
+ 108:	2a 97       	sbiw	r28, 0x0a	; 10
+ 10a:	0f b6       	in	r0, 0x3f	; 63
+ 10c:	f8 94       	cli
+ 10e:	de bf       	out	0x3e, r29	; 62
+ 110:	0f be       	out	0x3f, r0	; 63
+ 112:	cd bf       	out	0x3d, r28	; 61
+	// static을 통해 프로그램이 완전 종료될 때까지 fndDisplay 함수가 끝나고 어떤 값을 기다릴 꺼임
+	// static으로 선언했기 때문에 프로그램이 실행될때만 한번 0으로 초기화 됨
+	static uint8_t position = 0; // digit를 선택하는 포지션
+	uint8_t fndData[10] =
+ 114:	9a e0       	ldi	r25, 0x0A	; 10
+ 116:	eb e0       	ldi	r30, 0x0B	; 11
+ 118:	f1 e0       	ldi	r31, 0x01	; 1
+ 11a:	de 01       	movw	r26, r28
+ 11c:	11 96       	adiw	r26, 0x01	; 1
+ 11e:	01 90       	ld	r0, Z+
+ 120:	0d 92       	st	X+, r0
+ 122:	9a 95       	dec	r25
+ 124:	e1 f7       	brne	.-8      	; 0x11e <fndDisplay+0x1e>
+	{ 0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x27, 0x7F, 0x67 };
+	
+	switch(position)
+ 126:	90 91 16 01 	lds	r25, 0x0116	; 0x800116 <__data_end>
+ 12a:	91 30       	cpi	r25, 0x01	; 1
+ 12c:	d1 f0       	breq	.+52     	; 0x162 <fndDisplay+0x62>
+ 12e:	30 f0       	brcs	.+12     	; 0x13c <fndDisplay+0x3c>
+ 130:	92 30       	cpi	r25, 0x02	; 2
+ 132:	61 f1       	breq	.+88     	; 0x18c <fndDisplay+0x8c>
+ 134:	93 30       	cpi	r25, 0x03	; 3
+ 136:	09 f4       	brne	.+2      	; 0x13a <fndDisplay+0x3a>
+ 138:	4b c0       	rjmp	.+150    	; 0x1d0 <fndDisplay+0xd0>
+ 13a:	65 c0       	rjmp	.+202    	; 0x206 <fndDisplay+0x106>
+	{
+		case 0:
+		// 첫번째 자리의 FND를 표시하기 위해서 0번핀 LOW / 1, 2, 3번핀 HIGH
+		FND_SELECT_PORT &= ~(1 << 0);	// digit 1번 LED ON
+ 13c:	98 b3       	in	r25, 0x18	; 24
+ 13e:	9e 7f       	andi	r25, 0xFE	; 254
+ 140:	98 bb       	out	0x18, r25	; 24
+		FND_SELECT_PORT |= (1<<1) | (1<<2) | (1<<3); // digit 2, 3, 4번 LED OFF
+ 142:	98 b3       	in	r25, 0x18	; 24
+ 144:	9e 60       	ori	r25, 0x0E	; 14
+ 146:	98 bb       	out	0x18, r25	; 24
+		FND_DATA_PORT = fndData[data/1000]; // 천의 자리를 구하기 위해 1000으로 나눔
+ 148:	90 e0       	ldi	r25, 0x00	; 0
+ 14a:	68 ee       	ldi	r22, 0xE8	; 232
+ 14c:	73 e0       	ldi	r23, 0x03	; 3
+ 14e:	c2 d0       	rcall	.+388    	; 0x2d4 <__divmodhi4>
+ 150:	e1 e0       	ldi	r30, 0x01	; 1
+ 152:	f0 e0       	ldi	r31, 0x00	; 0
+ 154:	ec 0f       	add	r30, r28
+ 156:	fd 1f       	adc	r31, r29
+ 158:	e6 0f       	add	r30, r22
+ 15a:	f7 1f       	adc	r31, r23
+ 15c:	80 81       	ld	r24, Z
+ 15e:	85 bb       	out	0x15, r24	; 21
+		break;
+ 160:	52 c0       	rjmp	.+164    	; 0x206 <fndDisplay+0x106>
+		
+		case 1:
+		// 두번째 자리의 FND를 표시하기 위해서 1번핀 LOW / 0, 2, 3번핀 HIGH
+		FND_SELECT_PORT &= ~(1 << 1);	// digit 2번 LED ON
+ 162:	98 b3       	in	r25, 0x18	; 24
+ 164:	9d 7f       	andi	r25, 0xFD	; 253
+ 166:	98 bb       	out	0x18, r25	; 24
+		FND_SELECT_PORT |= (1<<0) | (1<<2) | (1<<3); // digit 1, 3, 4번 LED OFF
+ 168:	98 b3       	in	r25, 0x18	; 24
+ 16a:	9d 60       	ori	r25, 0x0D	; 13
+ 16c:	98 bb       	out	0x18, r25	; 24
+		FND_DATA_PORT = fndData[data/100%10]; // 백의 자리 구하기
+ 16e:	99 e2       	ldi	r25, 0x29	; 41
+ 170:	89 9f       	mul	r24, r25
+ 172:	81 2d       	mov	r24, r1
+ 174:	11 24       	eor	r1, r1
+ 176:	82 95       	swap	r24
+ 178:	8f 70       	andi	r24, 0x0F	; 15
+ 17a:	e1 e0       	ldi	r30, 0x01	; 1
+ 17c:	f0 e0       	ldi	r31, 0x00	; 0
+ 17e:	ec 0f       	add	r30, r28
+ 180:	fd 1f       	adc	r31, r29
+ 182:	e8 0f       	add	r30, r24
+ 184:	f1 1d       	adc	r31, r1
+ 186:	80 81       	ld	r24, Z
+ 188:	85 bb       	out	0x15, r24	; 21
+		break;
+ 18a:	3d c0       	rjmp	.+122    	; 0x206 <fndDisplay+0x106>
+		
+		case 2:
+		// 세번째 자리의 FND를 표시하기 위해서 2번핀 LOW / 0, 1, 3번핀 HIGH
+		FND_SELECT_PORT &= ~(1 << 2);	// digit 3번 LED ON
+ 18c:	98 b3       	in	r25, 0x18	; 24
+ 18e:	9b 7f       	andi	r25, 0xFB	; 251
+ 190:	98 bb       	out	0x18, r25	; 24
+		FND_SELECT_PORT |= (1<<0) | (1<<1) | (1<<3); // digit 1, 2, 4번 LED OFF
+ 192:	98 b3       	in	r25, 0x18	; 24
+ 194:	9b 60       	ori	r25, 0x0B	; 11
+ 196:	98 bb       	out	0x18, r25	; 24
+		FND_DATA_PORT = fndData[data/10%10]; // 십의 자리 구하기
+ 198:	9d ec       	ldi	r25, 0xCD	; 205
+ 19a:	89 9f       	mul	r24, r25
+ 19c:	81 2d       	mov	r24, r1
+ 19e:	11 24       	eor	r1, r1
+ 1a0:	86 95       	lsr	r24
+ 1a2:	86 95       	lsr	r24
+ 1a4:	86 95       	lsr	r24
+ 1a6:	89 9f       	mul	r24, r25
+ 1a8:	91 2d       	mov	r25, r1
+ 1aa:	11 24       	eor	r1, r1
+ 1ac:	96 95       	lsr	r25
+ 1ae:	96 95       	lsr	r25
+ 1b0:	96 95       	lsr	r25
+ 1b2:	99 0f       	add	r25, r25
+ 1b4:	29 2f       	mov	r18, r25
+ 1b6:	22 0f       	add	r18, r18
+ 1b8:	22 0f       	add	r18, r18
+ 1ba:	92 0f       	add	r25, r18
+ 1bc:	89 1b       	sub	r24, r25
+ 1be:	e1 e0       	ldi	r30, 0x01	; 1
+ 1c0:	f0 e0       	ldi	r31, 0x00	; 0
+ 1c2:	ec 0f       	add	r30, r28
+ 1c4:	fd 1f       	adc	r31, r29
+ 1c6:	e8 0f       	add	r30, r24
+ 1c8:	f1 1d       	adc	r31, r1
+ 1ca:	80 81       	ld	r24, Z
+ 1cc:	85 bb       	out	0x15, r24	; 21
+		break;
+ 1ce:	1b c0       	rjmp	.+54     	; 0x206 <fndDisplay+0x106>
+		
+		case 3:
+		// 네번째 자리의 FND를 표시하기 위해서 3번핀 LOW / 0, 1, 2번핀 HIGH
+		FND_SELECT_PORT &= ~(1 << 3);	// digit 4번 LED ON
+ 1d0:	98 b3       	in	r25, 0x18	; 24
+ 1d2:	97 7f       	andi	r25, 0xF7	; 247
+ 1d4:	98 bb       	out	0x18, r25	; 24
+		FND_SELECT_PORT |= (1<<0) | (1<<1) | (1<<2); // digit 1, 2, 3번 LED OFF
+ 1d6:	98 b3       	in	r25, 0x18	; 24
+ 1d8:	97 60       	ori	r25, 0x07	; 7
+ 1da:	98 bb       	out	0x18, r25	; 24
+		FND_DATA_PORT = fndData[data%10]; // 일의 자리 구하기
+ 1dc:	9d ec       	ldi	r25, 0xCD	; 205
+ 1de:	89 9f       	mul	r24, r25
+ 1e0:	91 2d       	mov	r25, r1
+ 1e2:	11 24       	eor	r1, r1
+ 1e4:	96 95       	lsr	r25
+ 1e6:	96 95       	lsr	r25
+ 1e8:	96 95       	lsr	r25
+ 1ea:	99 0f       	add	r25, r25
+ 1ec:	29 2f       	mov	r18, r25
+ 1ee:	22 0f       	add	r18, r18
+ 1f0:	22 0f       	add	r18, r18
+ 1f2:	92 0f       	add	r25, r18
+ 1f4:	89 1b       	sub	r24, r25
+ 1f6:	e1 e0       	ldi	r30, 0x01	; 1
+ 1f8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1fa:	ec 0f       	add	r30, r28
+ 1fc:	fd 1f       	adc	r31, r29
+ 1fe:	e8 0f       	add	r30, r24
+ 200:	f1 1d       	adc	r31, r1
+ 202:	80 81       	ld	r24, Z
+ 204:	85 bb       	out	0x15, r24	; 21
+		break;
+	}
+	position++;				 // 다음 자릿수로 이동하기 위해 ++ 해줌
+ 206:	80 91 16 01 	lds	r24, 0x0116	; 0x800116 <__data_end>
+ 20a:	8f 5f       	subi	r24, 0xFF	; 255
+	position = position % 4; // 4자리 출력 후엔 다시 첫번째로 가라
+ 20c:	83 70       	andi	r24, 0x03	; 3
+ 20e:	80 93 16 01 	sts	0x0116, r24	; 0x800116 <__data_end>
+}
+ 212:	2a 96       	adiw	r28, 0x0a	; 10
+ 214:	0f b6       	in	r0, 0x3f	; 63
+ 216:	f8 94       	cli
+ 218:	de bf       	out	0x3e, r29	; 62
+ 21a:	0f be       	out	0x3f, r0	; 63
+ 21c:	cd bf       	out	0x3d, r28	; 61
+ 21e:	df 91       	pop	r29
+ 220:	cf 91       	pop	r28
+ 222:	08 95       	ret
+
+00000224 <main>:
+
+int main(void)
+{
+    FND_DDR = 0xff;        // fnd를 출력으로
+ 224:	8f ef       	ldi	r24, 0xFF	; 255
+ 226:	8a bb       	out	0x1a, r24	; 26
+    FND_SELECT_DDR = 0x0f; // 선택핀 0000 1111로 설정
+ 228:	9f e0       	ldi	r25, 0x0F	; 15
+ 22a:	97 bb       	out	0x17, r25	; 23
+    FND_DATA_DDR = 0xff;   // 데이터핀 설정
+ 22c:	84 bb       	out	0x14, r24	; 20
+    LED_DDR = 0xff;        // led를 출력으로
+ 22e:	81 bb       	out	0x11, r24	; 17
+    LED_PORT = 0x00;       // led를 꺼진 상태로 초기화
+ 230:	12 ba       	out	0x12, r1	; 18
+    BUTTON_DDR = 0x00;     // button을 입력으로
+ 232:	10 92 64 00 	sts	0x0064, r1	; 0x800064 <__TEXT_REGION_LENGTH__+0x7e0064>
+    uint8_t buttonData;    // button의 정보를 저장하는 변수
+   
+    PWM_DDR |= (1 << DDRB4); // OC0을 사용하기 위해 PB4번 핀 이용
+ 236:	87 b3       	in	r24, 0x17	; 23
+ 238:	80 61       	ori	r24, 0x10	; 16
+ 23a:	87 bb       	out	0x17, r24	; 23
+    // 레지스터 초기화 (pwm 사용을 위함)
+    TCCR0 |= (1 << WGM00) | (1 << COM01) | (1 << WGM01) | (1 << CS02) | (1 << CS01);
+ 23c:	83 b7       	in	r24, 0x33	; 51
+ 23e:	8e 66       	ori	r24, 0x6E	; 110
+ 240:	83 bf       	out	0x33, r24	; 51
+    OCR0 = 0; // OCR0값을 조절해서 pwm 제어
+ 242:	11 be       	out	0x31, r1	; 49
+    
+	sei(); // 글로벌 인터럽트 활성화
+ 244:	78 94       	sei
+	TIMSK = (1 << TOIE0); // 오버플로우 인터럽트 활성화 (타이머를 구현하기 위해)
+ 246:	81 e0       	ldi	r24, 0x01	; 1
+ 248:	87 bf       	out	0x37, r24	; 55
+	
+    while (1) 
+    {
+      buttonData = PING;
+ 24a:	80 91 63 00 	lds	r24, 0x0063	; 0x800063 <__TEXT_REGION_LENGTH__+0x7e0063>
+      if((buttonData & (1 << 4)) == 0) // 4번 버튼 클릭
+ 24e:	84 fd       	sbrc	r24, 4
+ 250:	07 c0       	rjmp	.+14     	; 0x260 <main+0x3c>
+      {
+         FND_PORT = FND_Number[0]; // 정지
+ 252:	80 91 01 01 	lds	r24, 0x0101	; 0x800101 <FND_Number>
+ 256:	8b bb       	out	0x1b, r24	; 27
+         OCR0 = 255 * 0; // pwm 0%
+ 258:	11 be       	out	0x31, r1	; 49
+		 flag = 0;
+ 25a:	10 92 17 01 	sts	0x0117, r1	; 0x800117 <flag>
+ 25e:	1e c0       	rjmp	.+60     	; 0x29c <main+0x78>
+      }
+      else if((buttonData & (1 << 3)) == 0) // 3번 버튼
+ 260:	83 fd       	sbrc	r24, 3
+ 262:	08 c0       	rjmp	.+16     	; 0x274 <main+0x50>
+      {
+         FND_PORT = FND_Number[1]; // 1단
+ 264:	80 91 02 01 	lds	r24, 0x0102	; 0x800102 <FND_Number+0x1>
+ 268:	8b bb       	out	0x1b, r24	; 27
+         OCR0 = 255 / 2; // pwm 50%
+ 26a:	8f e7       	ldi	r24, 0x7F	; 127
+ 26c:	81 bf       	out	0x31, r24	; 49
+         flag = 0;
+ 26e:	10 92 17 01 	sts	0x0117, r1	; 0x800117 <flag>
+ 272:	14 c0       	rjmp	.+40     	; 0x29c <main+0x78>
+      }
+      else if((buttonData & (1 << 2)) == 0) // 2번 버튼
+ 274:	82 fd       	sbrc	r24, 2
+ 276:	08 c0       	rjmp	.+16     	; 0x288 <main+0x64>
+      {
+         FND_PORT = FND_Number[2]; // 2단
+ 278:	80 91 03 01 	lds	r24, 0x0103	; 0x800103 <FND_Number+0x2>
+ 27c:	8b bb       	out	0x1b, r24	; 27
+         OCR0 = 255 * 9 / 10; // pwm 90%
+ 27e:	85 ee       	ldi	r24, 0xE5	; 229
+ 280:	81 bf       	out	0x31, r24	; 49
+		 flag = 0;
+ 282:	10 92 17 01 	sts	0x0117, r1	; 0x800117 <flag>
+ 286:	0a c0       	rjmp	.+20     	; 0x29c <main+0x78>
+      }
+      else if((buttonData & (1 << 1)) == 0) // 1번 버튼
+ 288:	81 fd       	sbrc	r24, 1
+ 28a:	08 c0       	rjmp	.+16     	; 0x29c <main+0x78>
+      {
+         flag = 1;
+ 28c:	81 e0       	ldi	r24, 0x01	; 1
+ 28e:	80 93 17 01 	sts	0x0117, r24	; 0x800117 <flag>
+		 count = 10;   // 카운트는 10초부터 시작
+ 292:	8a e0       	ldi	r24, 0x0A	; 10
+ 294:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+		 ms_count = 0;
+ 298:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <ms_count>
+      }
+	  
+	  if(flag == 1) // 1번 버튼을 눌렀다면
+ 29c:	80 91 17 01 	lds	r24, 0x0117	; 0x800117 <flag>
+ 2a0:	81 30       	cpi	r24, 0x01	; 1
+ 2a2:	71 f4       	brne	.+28     	; 0x2c0 <main+0x9c>
+	  {
+		  fndDisplay(count); // count 숫자 출력
+ 2a4:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 2a8:	2b df       	rcall	.-426    	; 0x100 <fndDisplay>
+		  if(count == 0)
+ 2aa:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 2ae:	81 11       	cpse	r24, r1
+ 2b0:	0a c0       	rjmp	.+20     	; 0x2c6 <main+0xa2>
+		  {
+			  flag = 0;
+ 2b2:	10 92 17 01 	sts	0x0117, r1	; 0x800117 <flag>
+			  FND_PORT = FND_Number[0]; // 정지
+ 2b6:	80 91 01 01 	lds	r24, 0x0101	; 0x800101 <FND_Number>
+ 2ba:	8b bb       	out	0x1b, r24	; 27
+			  OCR0 = 255 * 0; // pwm 0%
+ 2bc:	11 be       	out	0x31, r1	; 49
+ 2be:	03 c0       	rjmp	.+6      	; 0x2c6 <main+0xa2>
+		  }
+	  }
+	  else
+	  {
+		  FND_SELECT_PORT |= (1<<0) | (1<<1) | (1<<2) | (1<<3); // FND_4개 OFF
+ 2c0:	88 b3       	in	r24, 0x18	; 24
+ 2c2:	8f 60       	ori	r24, 0x0F	; 15
+ 2c4:	88 bb       	out	0x18, r24	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 2c6:	8f e9       	ldi	r24, 0x9F	; 159
+ 2c8:	9f e0       	ldi	r25, 0x0F	; 15
+ 2ca:	01 97       	sbiw	r24, 0x01	; 1
+ 2cc:	f1 f7       	brne	.-4      	; 0x2ca <main+0xa6>
+ 2ce:	00 c0       	rjmp	.+0      	; 0x2d0 <main+0xac>
+ 2d0:	00 00       	nop
+ 2d2:	bb cf       	rjmp	.-138    	; 0x24a <main+0x26>
+
+000002d4 <__divmodhi4>:
+ 2d4:	97 fb       	bst	r25, 7
+ 2d6:	07 2e       	mov	r0, r23
+ 2d8:	16 f4       	brtc	.+4      	; 0x2de <__divmodhi4+0xa>
+ 2da:	00 94       	com	r0
+ 2dc:	06 d0       	rcall	.+12     	; 0x2ea <__divmodhi4_neg1>
+ 2de:	77 fd       	sbrc	r23, 7
+ 2e0:	08 d0       	rcall	.+16     	; 0x2f2 <__divmodhi4_neg2>
+ 2e2:	0b d0       	rcall	.+22     	; 0x2fa <__udivmodhi4>
+ 2e4:	07 fc       	sbrc	r0, 7
+ 2e6:	05 d0       	rcall	.+10     	; 0x2f2 <__divmodhi4_neg2>
+ 2e8:	3e f4       	brtc	.+14     	; 0x2f8 <__divmodhi4_exit>
+
+000002ea <__divmodhi4_neg1>:
+ 2ea:	90 95       	com	r25
+ 2ec:	81 95       	neg	r24
+ 2ee:	9f 4f       	sbci	r25, 0xFF	; 255
+ 2f0:	08 95       	ret
+
+000002f2 <__divmodhi4_neg2>:
+ 2f2:	70 95       	com	r23
+ 2f4:	61 95       	neg	r22
+ 2f6:	7f 4f       	sbci	r23, 0xFF	; 255
+
+000002f8 <__divmodhi4_exit>:
+ 2f8:	08 95       	ret
+
+000002fa <__udivmodhi4>:
+ 2fa:	aa 1b       	sub	r26, r26
+ 2fc:	bb 1b       	sub	r27, r27
+ 2fe:	51 e1       	ldi	r21, 0x11	; 17
+ 300:	07 c0       	rjmp	.+14     	; 0x310 <__udivmodhi4_ep>
+
+00000302 <__udivmodhi4_loop>:
+ 302:	aa 1f       	adc	r26, r26
+ 304:	bb 1f       	adc	r27, r27
+ 306:	a6 17       	cp	r26, r22
+ 308:	b7 07       	cpc	r27, r23
+ 30a:	10 f0       	brcs	.+4      	; 0x310 <__udivmodhi4_ep>
+ 30c:	a6 1b       	sub	r26, r22
+ 30e:	b7 0b       	sbc	r27, r23
+
+00000310 <__udivmodhi4_ep>:
+ 310:	88 1f       	adc	r24, r24
+ 312:	99 1f       	adc	r25, r25
+ 314:	5a 95       	dec	r21
+ 316:	a9 f7       	brne	.-22     	; 0x302 <__udivmodhi4_loop>
+ 318:	80 95       	com	r24
+ 31a:	90 95       	com	r25
+ 31c:	bc 01       	movw	r22, r24
+ 31e:	cd 01       	movw	r24, r26
+ 320:	08 95       	ret
+
+00000322 <_exit>:
+ 322:	f8 94       	cli
+
+00000324 <__stop_program>:
+ 324:	ff cf       	rjmp	.-2      	; 0x324 <__stop_program>
