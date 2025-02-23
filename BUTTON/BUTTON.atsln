@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "BUTTON", "BUTTON\BUTTON.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "BUTTON_1", "BUTTON_1\BUTTON_1.cproj", "{26FB8231-55E5-40E7-92E3-A195C682A78F}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "BUTTON_2", "BUTTON_2\BUTTON_2.cproj", "{3B37D0A7-D783-423C-95CA-88BE894DFD54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{26FB8231-55E5-40E7-92E3-A195C682A78F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{26FB8231-55E5-40E7-92E3-A195C682A78F}.Debug|AVR.Build.0 = Debug|AVR
+		{26FB8231-55E5-40E7-92E3-A195C682A78F}.Release|AVR.ActiveCfg = Release|AVR
+		{26FB8231-55E5-40E7-92E3-A195C682A78F}.Release|AVR.Build.0 = Release|AVR
+		{3B37D0A7-D783-423C-95CA-88BE894DFD54}.Debug|AVR.ActiveCfg = Debug|AVR
+		{3B37D0A7-D783-423C-95CA-88BE894DFD54}.Debug|AVR.Build.0 = Debug|AVR
+		{3B37D0A7-D783-423C-95CA-88BE894DFD54}.Release|AVR.ActiveCfg = Release|AVR
+		{3B37D0A7-D783-423C-95CA-88BE894DFD54}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

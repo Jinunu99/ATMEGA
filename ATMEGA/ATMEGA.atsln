@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "INT", "INT\INT.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "TIMER_COUNTER_CTC", "TIMER_COUNTER_CTC\TIMER_COUNTER_CTC.cproj", "{A66E3FDD-DF7F-4B78-BC46-3CFA44CECC68}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "TIMER_COUNTER_NORMAL", "TIMER_COUNTER_NORMAL\TIMER_COUNTER_NORMAL.cproj", "{36C1B588-B680-4F59-ABCC-7DB29AC7917C}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "TIMER_COUNTER_PWM", "TIMER_COUNTER_PWM\TIMER_COUNTER_PWM.cproj", "{A96A8D6B-05D8-429E-A1F4-AD67903A5D3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{A66E3FDD-DF7F-4B78-BC46-3CFA44CECC68}.Debug|AVR.ActiveCfg = Debug|AVR
+		{A66E3FDD-DF7F-4B78-BC46-3CFA44CECC68}.Debug|AVR.Build.0 = Debug|AVR
+		{A66E3FDD-DF7F-4B78-BC46-3CFA44CECC68}.Release|AVR.ActiveCfg = Release|AVR
+		{A66E3FDD-DF7F-4B78-BC46-3CFA44CECC68}.Release|AVR.Build.0 = Release|AVR
+		{36C1B588-B680-4F59-ABCC-7DB29AC7917C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{36C1B588-B680-4F59-ABCC-7DB29AC7917C}.Debug|AVR.Build.0 = Debug|AVR
+		{36C1B588-B680-4F59-ABCC-7DB29AC7917C}.Release|AVR.ActiveCfg = Release|AVR
+		{36C1B588-B680-4F59-ABCC-7DB29AC7917C}.Release|AVR.Build.0 = Release|AVR
+		{A96A8D6B-05D8-429E-A1F4-AD67903A5D3E}.Debug|AVR.ActiveCfg = Debug|AVR
+		{A96A8D6B-05D8-429E-A1F4-AD67903A5D3E}.Debug|AVR.Build.0 = Debug|AVR
+		{A96A8D6B-05D8-429E-A1F4-AD67903A5D3E}.Release|AVR.ActiveCfg = Release|AVR
+		{A96A8D6B-05D8-429E-A1F4-AD67903A5D3E}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
