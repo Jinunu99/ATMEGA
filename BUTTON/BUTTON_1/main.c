@@ -1,9 +1,7 @@
 /*
- * BUTTON_1.c
- *
- * Created: 2025-02-20 오전 9:12:11
- * Author : USER
- */ 
+4번 버튼 누르면 led 왼쪽으로 한칸이동
+3번 버튼 누르면 오른쪽으로 한칸이동
+*/
 #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
@@ -11,8 +9,8 @@
 
 int main(void)
 {
-	DDRD = 0xff; // 출력으로 지정
-	DDRG = 0x00; // 입력으로 지정
+	DDRD = 0xff; // D 레지스터를 출력으로 지정
+	DDRG = 0x00; // G 레지스터를 입력으로 지정
 	
 	uint8_t ledData = 0x01; // 0000 0001
 	uint8_t buttonData;
@@ -27,7 +25,7 @@ int main(void)
 		{
 			ledData = (ledData >> 7) | (ledData << 1);
 			PORTD = ledData;
-			_delay_ms(300);
+			_delay_ms(300); // 채터링 현상을 완화하기 위해 지연을 통해 디바운스 구현
 		}
 		if((buttonData & (1 << 3)) == 0) // 3번 버튼을 누르면
 		{
