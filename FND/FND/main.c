@@ -12,7 +12,7 @@ int main(void)
 {
 	uint8_t FND_Number[] =
 	{
-		// 7세그먼트의 0 ~ 9까지 제어값을 배열에 저장
+		// 7세그먼트의 0 ~ 9까지 제어값을 배열에 미리 저장
 		0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x27, 0x7F, 0x67
 	};
 	
@@ -22,7 +22,7 @@ int main(void)
 	
 	while(1)
 	{
-		PORTA = FND_Number[count];
+		PORTA = FND_Number[count]; // 현재 count값에 따라 FND 출력
 		count = (count + 1) % 10;
 		_delay_ms(500);
 	}

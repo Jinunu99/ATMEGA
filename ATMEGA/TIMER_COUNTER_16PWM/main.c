@@ -1,9 +1,7 @@
-/*
- * TIMER_COUNTER_16PWM.c
- *
- * Created: 02-25 (화) 오후 5:29:18
- * Author : jw
- */ 
+/* TIMER_COUNTER_16PWM 코드
+기능)
+Fast PWM 모드, 64분주, non-inverting 모드 => 레지스터 설정해줘야 함
+*/
 #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
